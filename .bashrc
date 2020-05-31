@@ -118,7 +118,7 @@ fi
 
 #custom added 
 alias bashrc='vim ~/.bashrc' 
-alias vimrc='vim ~/.vim/vimrc'
+alias vimrc='vim ~/.vimrc'
 alias mguide='vim ~/Temp/Guide/linux-config.tex'
 alias tmuxconf='vim ~/.tmux.conf'
 
