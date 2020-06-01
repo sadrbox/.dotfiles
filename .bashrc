@@ -123,7 +123,6 @@ alias mguide='vim ~/Temp/Guide/linux-config.tex'
 alias tmuxconf='vim ~/.tmux.conf'
 
 #fast commands 
-#alias updotfiles='
 updotfiles () {
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ status
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ add .
@@ -131,6 +130,12 @@ updotfiles () {
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ push
 }
 
-export PATH=~/.npm/global/bin:$PATH
+upsite () {
+  git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ status
+  git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ add .
+  git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ commit -m "$(date)"
+  git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ push
+}
 
+export PATH=~/.npm/global/bin:$PATH
 export TERM="xterm-256color"
