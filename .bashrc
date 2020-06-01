@@ -122,6 +122,15 @@ alias vimrc='vim ~/.vimrc'
 alias mguide='vim ~/Temp/Guide/linux-config.tex'
 alias tmuxconf='vim ~/.tmux.conf'
 
+#fast commands 
+#alias updotfiles='
+updotfiles () {
+  git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ status
+  git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ add .
+  git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ commit -m "$(date)"
+  git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ push
+}
+
 export PATH=~/.npm/global/bin:$PATH
 
 export TERM="xterm-256color"

@@ -143,7 +143,7 @@ let g:mapleader = ','
 inoremap <F3> <C-o>:w<CR>
 inoremap <F2> <ESC>gg=G<C-o><C-o>
 
-nmap <F2> gg=G<C-o><C-o>
+nmap <leader>f gg=G<C-o><C-o>
 
 nmap <leader>w gg=G :w<CR><C-o><C-o>
 nmap <leader>r :w<cr>:source %<cr>
