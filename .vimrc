@@ -26,8 +26,9 @@ set formatoptions+=ncroqlj " Control automatic formatting.
 
 " ===============================================================
 " Custome settting
+filetype plugin indent on  " Enable filetype-specific settings.
+syntax on                  " Enable syntax highlighting.
 
-filetype plugin indent on
 
 " set cindent 
 " inoremap { {<CR>}<Esc>O<TAB>
@@ -39,7 +40,7 @@ set nowrap
 colorscheme OceanicNext
 "colorscheme minimalist
 
-set cursorline
+"set cursorline " при включонной опции, курсор тормозит
 
 set bomb
 set encoding=utf-8
@@ -133,8 +134,6 @@ let g:tex_flavor = 'latex' "latex of pdflatex
 let g:vimtex_view_general_viewer = 'evince'
 
 
-filetype plugin indent on  " Enable filetype-specific settings.
-syntax on                  " Enable syntax highlighting.
 
 autocmd Filetype tex setl updatetime=100
 let g:livepreview_previewer = 'evince'
