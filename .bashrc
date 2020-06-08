@@ -125,6 +125,7 @@ alias gts='cd ~/Web/playing/vue/tmp1'
 
 #fast commands 
 updotfiles () {
+  git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ pull
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ status
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ add .
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ commit -m "$(date)"
@@ -132,6 +133,7 @@ updotfiles () {
 }
 
 upsite () {
+  git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ pull
   git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ status
   git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ add .
   git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ commit -m "$(date)"
