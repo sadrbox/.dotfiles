@@ -130,6 +130,7 @@ updotfiles () {
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ add .
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ commit -m "$(date)"
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ push
+  source ~/.bashrc  
 }
 
 upsite () {
