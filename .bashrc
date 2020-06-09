@@ -130,7 +130,7 @@ updotfiles () {
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ add .
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ commit -m "$(date)"
   git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ push
-  source ~/.bashrc  
+  git --git-dir=/home/$USER/.dotfiles/.git --work-tree=/home/$USER/.dotfiles/ pull
 }
 
 upsite () {
@@ -139,6 +139,7 @@ upsite () {
   git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ add .
   git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ commit -m "$(date)"
   git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ push
+  git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ pull
 }
 
 #getCurLayouts() {
