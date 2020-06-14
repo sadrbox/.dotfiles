@@ -90,7 +90,7 @@ Plug 'mattn/emmet-vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'plasticboy/vim-markdown'
-Plug 'gregsexton/matchtag'
+"Plug 'gregsexton/matchtag'
 "Plug 'preservim/nerdcommenter'
 "Plug 'townk/vim-autoclose'
 

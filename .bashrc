@@ -122,6 +122,7 @@ alias vimrc='vim ~/.vimrc'
 alias mguide='vim ~/Temp/Guide/linux-config.tex'
 alias tmuxconf='vim ~/.tmux.conf'
 alias gts='cd ~/Web/playing/vue/tmp1'
+alias off='sudo shutdown --poweroff'
 
 #fast commands 
 updotfiles () {
