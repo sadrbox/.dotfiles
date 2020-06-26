@@ -143,10 +143,5 @@ upsite () {
   git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ pull
 }
 
-#getCurLayouts() {
-#  layout="$(xset -q | awk 'BEGIN { a[1]="RU"; a[0]="EN" } /LED/ { print a[substr($10,5,1)]; }')"
-#  echo $layout
-#}
-
 export PATH=~/.npm/global/bin:$PATH
 export TERM="xterm-256color"
