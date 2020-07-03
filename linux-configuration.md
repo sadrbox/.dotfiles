@@ -1,6 +1,6 @@
-#Linux configuration
+Linux configuration
 
-##Web Server
+Web Server
 
 ~~~bash
 sudo apt install software-properties-common
