@@ -119,7 +119,7 @@ fi
 #custom added 
 alias bashrc='vim ~/.bashrc' 
 alias vimrc='vim ~/.vimrc'
-alias mguide='vim ~/Temp/Guide/linux-config.tex'
+alias mguide='vim ~/.dotfiles/linux-configuration.md'
 alias tmuxconf='vim ~/.tmux.conf'
 alias gts='cd ~/Web/playing/vue/tmp1'
 alias off='sudo shutdown --poweroff'
@@ -149,4 +149,5 @@ upsite () {
 #}
 
 export PATH=~/.npm/global/bin:$PATH
+export PATH=~/.config/composer/vendor/bin:$PATH
 export TERM="xterm-256color"
