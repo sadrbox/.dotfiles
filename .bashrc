@@ -143,6 +143,15 @@ upsite () {
   git --git-dir=/home/$USER/Web/playing/vue/tmp1/.git --work-tree=/home/$USER/Web/playing/vue/tmp1/ pull
 }
 
+upv2 () {
+  git --git-dir=/home/$USER/Web/playing/v2/.git --work-tree=/home/$USER/Web/playing/v2/ pull
+  git --git-dir=/home/$USER/Web/playing/v2/.git --work-tree=/home/$USER/Web/playing/v2/ status
+  git --git-dir=/home/$USER/Web/playing/v2/.git --work-tree=/home/$USER/Web/playing/v2/ add .
+  git --git-dir=/home/$USER/Web/playing/v2/.git --work-tree=/home/$USER/Web/playing/v2/ commit -m "$(date)"
+  git --git-dir=/home/$USER/Web/playing/v2/.git --work-tree=/home/$USER/Web/playing/v2/ push
+  git --git-dir=/home/$USER/Web/playing/v2/.git --work-tree=/home/$USER/Web/playing/v2/ pull
+}
+
 export PATH=~/.npm/global/bin:$PATH
 export PATH=~/.config/composer/vendor/bin:$PATH
 export TERM="xterm-256color"
