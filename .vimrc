@@ -69,27 +69,31 @@ endif
 
 call plug#begin()
 
-Plug 'lervag/vimtex'
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'xolox/vim-colorscheme-switcher'
-Plug 'xolox/vim-misc'
+Plug 'mhartington/oceanic-next'
+
+"Plug 'lervag/vimtex'
+"Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+
+
+"Plug 'xolox/vim-colorscheme-switcher'
+"Plug 'xolox/vim-misc'
 
 
 "Plug 'cormacrelf/vim-colors-github'
 " Plug 'srcery-colors/srcery-vim'
-Plug 'rafi/awesome-vim-colorschemes'
+"Plug 'rafi/awesome-vim-colorschemes'
 "Plug 'rainglow/vim'
 
 "Plugins for web development
-Plug 'posva/vim-vue'
+"Plug 'posva/vim-vue'
 "Plug 'jiangmiao/auto-pairs'
 "Plug 'prettier/vim-prettier'
-Plug 'mattn/emmet-vim'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'plasticboy/vim-markdown'
+"Plug 'cakebaker/scss-syntax.vim'
+"Plug 'plasticboy/vim-markdown'
 "Plug 'gregsexton/matchtag'
 "Plug 'preservim/nerdcommenter'
 "Plug 'townk/vim-autoclose'
